@@ -1,0 +1,13 @@
+@filter
+entity Banner{
+	img String required maxlength(255),
+   	url String required maxlength(255),
+    title String required maxlength(255),
+	active String required maxlength(255),
+	position String required maxlength(255),
+	store String required maxlength(255),
+	type String required maxlength(255),
+	html String maxlength(255),
+}
+
+paginate Banner with pagination
