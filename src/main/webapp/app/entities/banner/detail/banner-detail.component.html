@@ -1,0 +1,60 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="banner">
+      <h2 data-cy="bannerDetailsHeading"><span>Banner</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ banner.id }}</span>
+        </dd>
+        <dt><span>Img</span></dt>
+        <dd>
+          <span>{{ banner.img }}</span>
+        </dd>
+        <dt><span>Url</span></dt>
+        <dd>
+          <span>{{ banner.url }}</span>
+        </dd>
+        <dt><span>Title</span></dt>
+        <dd>
+          <span>{{ banner.title }}</span>
+        </dd>
+        <dt><span>Active</span></dt>
+        <dd>
+          <span>{{ banner.active }}</span>
+        </dd>
+        <dt><span>Position</span></dt>
+        <dd>
+          <span>{{ banner.position }}</span>
+        </dd>
+        <dt><span>Store</span></dt>
+        <dd>
+          <span>{{ banner.store }}</span>
+        </dd>
+        <dt><span>Type</span></dt>
+        <dd>
+          <span>{{ banner.type }}</span>
+        </dd>
+        <dt><span>Html</span></dt>
+        <dd>
+          <span>{{ banner.html }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/banner', banner.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
