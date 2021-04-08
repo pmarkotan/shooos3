@@ -42,7 +42,9 @@
     "jwtSecretKey": "OTFjZTdlNDQ3Y2U5MGUzMmUyNWZkN2U4MmRiNWFhM2Q5NjE5ZTkxMzAzOGU3MDkwZjQ3YjNkYzFhMGQ0N2U2ZjZlZGE3YzUyOGFiZTMxYmU4YzU1OTg1NGUyMDYwZDdlMmY4MGJiYmRiYWQwYTcwOTM5NjQwOTlkY2U4M2YwODI=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Banner"],
+    "lastLiquibaseTimestamp": 1617880340000
   },
   "git-provider": "GitHub",
   "git-company": "pmarkotan",
